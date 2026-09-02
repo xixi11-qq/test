@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Gojo Simple",
+    "slug": "gojo-simple",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#070d1a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.gojosimple"
+    },
+    "android": {
+      "package": "com.example.gojosimple",
+      "softwareKeyboardLayoutMode": "pan",
+      "adaptiveIcon": {
+        "backgroundColor": "#070d1a"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "允许 App 访问相册以选择要发送给 AI 的图片",
+          "cameraPermission": "允许 App 使用相机以拍照发送给 AI"
+        }
+      ]
+    ],
+    "scheme": "gojosimple",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7279a2b9-eff4-4b1c-99c5-1c9350473d47"
+      }
+    },
+    "owner": "ericakhor"
+  }
+}
