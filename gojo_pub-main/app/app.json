@@ -12,16 +12,22 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.example.gojosimple"
+      "bundleIdentifier": "com.gojo.simple"
     },
     "android": {
-      "package": "com.example.gojosimple",
+      "package": "com.gojo.simple",
       "softwareKeyboardLayoutMode": "pan",
       "adaptiveIcon": {
         "backgroundColor": "#070d1a"
       },
       "permissions": [
-        "android.permission.RECORD_AUDIO"
+        "android.permission.RECORD_AUDIO",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.USE_EXACT_ALARM",
+        "android.permission.WAKE_LOCK",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE"
       ]
     },
     "web": {
@@ -29,6 +35,13 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-notifications",
+        {
+          "androidMode": "default",
+          "androidCollapsedTitle": "Gojo"
+        }
+      ],
       [
         "expo-image-picker",
         {
@@ -41,9 +54,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "7279a2b9-eff4-4b1c-99c5-1c9350473d47"
+        "projectId": "5df9225c-8bd9-4e0a-8047-95df8fca8baf"
       }
     },
-    "owner": "ericakhor"
+    "owner": "egjbs"
   }
 }
