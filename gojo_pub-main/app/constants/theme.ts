@@ -37,7 +37,9 @@ export const WEEKDAYS = ['日','一','二','三','四','五','六'];
 export const MONTHS = ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'];
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
-export const DEFAULT_SERVER_URL = '';  // ★ 不硬编码，用户在设置里填自己的地址
+// ★ 预置已部署的 Zeabur 后端地址：装完 APK 打开即用，无需手动填服务器
+//   用户仍可在「设置」页改成自己的地址
+export const DEFAULT_SERVER_URL = 'https://gojo-pub.zeabur.app';
 
 export let SERVER_URL = DEFAULT_SERVER_URL;
 
